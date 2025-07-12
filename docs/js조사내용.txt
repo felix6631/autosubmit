@@ -1,0 +1,53 @@
+in BDCIAqy2.js
+function Ie(e, t) {
+    const n = new Uint8Array(t.length / 2);
+    for (let o = 0; o < t.length; o += 2)
+        n[o / 2] = parseInt(t.substring(o, o + 2), 16);
+    const r = new Uint8Array(e.length);
+    for (let o = 0; o < e.length; o++)
+        r[o] = e[o] ^ n[o % n.length];
+    return r
+}
+
+e: Uint8Array(234)
+t: 해시 값??(3bac4bbff0db479eccf68cc7a0b71cc4)
+
+Uint8Array(234) as e
+origin:[234, 0, 0, 0, 16, 112, 114, 111, 98, 108, 101, 109, 73, 100, 0, 232, 3, 0, 0, 2, 108, 97, 110, 103, 117, 97, 103, 101, 0, 4, 0, 0, 0, 67, 80, 80, 0, 4, 115, 111, 117, 114, 99, 101, 0, 177, 0, 0, 0, 3, 48, 0, 169, 0, 0, 0, 2, 110, 97, 109, 101, 0, 9, 0, 0, 0, 77, 97, 105, 110, 46, 99, 112, 112, 0, 2, 115, 111, 117, 114, 99, 101, 0, 133, 0, 0, 0, 35, 105, 110, 99, 108, 117, 100, 101, 32, 60, 105, 111, 115, 116, 114, 101, 97, 109, 62, 13, 10, 13, 10, 105, 110, 116, 32, 109, 97, 105, 110, 40, 118, 111, 105, 100, 41, 32, 123, 13, 10, 32, 32, 32, 32, 105, 110, 116, 32, 97, 44, 98, 59, 13, 10, 32, 32, 32, 32, 115, 116, 100, 58, 58, 99, 105, 110, 32, 62, 62, 32, 97, 32, 62, 62, 32, 98, 59, 13, 10, 32, 32, 32, 32, 115, 116, 100, 58, 58, 99, 111, 117, 116, 32, 60, 60, 32, 97, 43, 98, 32, 60, 60, 32, 115, 116, 100, 58, 58, 101, 110, 100, 108, 59, 13, 10, 32, 32, 32, 32, 114, 101, 116, 117, 114, 110, 32, 48, 59, 13, 10, 125, 0, 0, 0, 10, 99, 111, 110, 116, 101, 115, 116, 73, 100, 0, 0]
+origin.tostr
+-------------------------------------------------------------------
+
+    
+êproblemIdèlanguageCPPsource±0©name	Main.cppsource#include <iostream>
+
+
+
+int main(void) {
+
+    int a,b;
+
+    std::cin >> a >> b;
+
+    std::cout << a+b << std::endl;
+
+    return 0;
+
+}
+contestId
+----------------------------------------
+json 
+
+{
+    "problemId": 1000,
+    "language": "CPP",
+    "source": [
+        {
+            "name": "Main.cpp",
+            "source": "#include <iostream>\r\n\r\nint main(void) {\r\n    int a,b;\r\n    std::cin >> a >> b;\r\n    std::cout << a+b << std::endl;\r\n    return 0;\r\n}"
+        }
+    ],
+    "contestId": null
+}
+
+
+https://github.com/mongodb/js-bson/blob/main/src/parser/serializer.ts#L54
